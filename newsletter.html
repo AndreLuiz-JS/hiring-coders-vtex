@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Newsletter | Nossa Loja</title>
+    <meta name="description" content="Cadastre-se na nossa newsletter e saiba em primeira mão das novidades!" />
+    <link rel="preload" as="style" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" onload="this.onload=null;this.rel='stylesheet'" />
+    <link rel="preload" as="style" href="css/newsletter.css" onload="this.onload=null;this.rel='stylesheet'" />
+    <script type="text/javascript" language="javascript" src="js/newsletter.js" defer></script>
+  </head>
+  <body>
+    <section class="newsletter">
+      <h1>Newsletter</h1>
+      <p>Cadastre-se para receber novidades e promoções</p>
+      <form action="/" method="post" id="newsletterForm">
+        <fieldset>
+          <label for="name">Nome</label>
+          <input type="text" id="name" placeholder="Como quer ser chamado?" required autocomplete="off" />
+          <label for="email">E-mail</label>
+          <input type="email" id="email" placeholder="Seu melhor e-mail" required autocomplete="on" />
+          <button type="submit">
+            <i class="fa fa-paper-plane" aria-label="cadastrar"></i>
+          </button>
+        </fieldset>
+      </form>
+    </section>
+  </body>
+</html>

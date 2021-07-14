@@ -1,0 +1,59 @@
+*,
+body,
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+}
+body {
+  background: linear-gradient(-90deg, rgba(22, 2, 4, 0.767) 33%, rgb(22, 2, 4) 90%), url(../img/newsletter.jpg) no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  font-family: sans-serif;
+}
+.newsletter {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 20px;
+  margin: 40px auto;
+  max-width: 1180px;
+  color: #fff;
+  text-shadow: 1px 1px 3px #000;
+}
+
+.newsletter p {
+  margin: 10px 0;
+}
+
+.newsletter fieldset {
+  display: grid;
+  grid-template-columns: 60px auto 60px;
+  grid-template-rows: 30px 30px;
+  gap: 10px;
+  max-width: 360px;
+}
+
+.newsletter fieldset label {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.newsletter fieldset input {
+  padding: 10px;
+  border-radius: 15px/50%;
+}
+.newsletter fieldset input#name {
+  grid-column: 2 / -1;
+}
+
+.newsletter fieldset button {
+  background: #232b68;
+  color: white;
+  transition: all 0.2s ease-out;
+  border-radius: 15px/50%;
+}
+.newsletter fieldset button:hover {
+  filter: brightness(1.1);
+  box-shadow: 0px 0px 10px rgba(191, 199, 233, 0.596);
+}
